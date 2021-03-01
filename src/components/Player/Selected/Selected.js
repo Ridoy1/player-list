@@ -7,7 +7,10 @@ const Selected = (props) => {
      
     return (
         <div>
-            <h2>This is cart: {selected.map(selected => <Selected selected={selected}></Selected>)}</h2>
+            {
+                selected.map(select => <p>{select.name} <span>Salary: {select.salary}</span></p>)
+            }
+            <p></p>
             <p>Total Salary: {totalPlayer}</p>
         </div>
     );
