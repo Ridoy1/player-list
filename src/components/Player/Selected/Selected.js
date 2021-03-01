@@ -8,7 +8,7 @@ const Selected = (props) => {
     return (
         <div>
             {
-                selected.map(select => <p>{select.name} <span>Salary: {select.salary}</span></p>)
+                selected.map(select => <p>Name: {select.name} <span>Salary: {select.salary}</span></p>)
             }
             <p></p>
             <p>Total Salary: {totalPlayer}</p>
